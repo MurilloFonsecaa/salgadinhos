@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+    <div class="cor-do-topo">
+        <img src="img/img/Salgados Logo.png" alt="Logo">
+        <div class="links-topo">
+            <a href="home.html" class="links-topo">Página inicial</a>
+            <a href="sobre.html" class="links-topo">Sobre</a>
+            <a href="serviços.html" class="links-topo">Serviços</a>
+            <a href="novidades.html" class="links-topo">Novidades</a>
+            <a href="contato.html" class="links-topo">Fale conosco</a>
+        </div>
+
+        <div class="campo-de-busca">
+            <input type="text" placeholder="Procure aqui">
+        </div>
+    </div>
+
+
+    <main>
+        <section class="about__section">
+            <div class="caixa">
+                <h3>Nossa história</h3>
+                <p>A sociedade foi fundada em 1999, por Greice Braga e Sandra Helena. No começo, quando ainda não vendiam os salgadinhos, elas faziam kit festa com diversas variedades de guloseimas e trabalhavam em festas. Ao conseguir uma oportunidade em Guadalupe, elas logo se estabeleceram ali, na rua Marcos de Macedo, aonde, desde 2001, atuam fabricando e fritando salgadinhos. Elas que iniciaram com apenas 3 mesas e fritadeiras, hoje contam com 1 quiosque e 1 loja que atua somente com delivery, além de 1 quiosque na Praça Granito, em Parque Anchieta. São 24 anos de muito trabalho e amor ao que fazem, e que nunca deixaram de vender salgadinhos deliciosos ao seus clientes.</p> 
+            </div>
+        </section>
+        <section class="about__section">
+            <div class="about__section-container">
+                <div class="caixa">
+                    <h3>Quiosque Guadalupe</h3>
+                    <p><a href="R. Marcos de Macedo, 220 - Guadalupe, Rio de Janeiro - RJ, 21660-020">Rua Marcos de Macedo, 220, Guadalupe</a>. Em frente ao material de construção.</p>
+                </div>
+                <div class="caixa">
+                    <h3>Quiosque Granito</h3>
+                    <p><a href="Av. Cipriano Barata, 330 - Anchieta, Rio de Janeiro - RJ, 21620-190">Avenida Cipriano Barata, 330, Praça Granito</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer>
+        <p class="social">
+            © 2025 - Quiosque Salgadinhos Deliciosos.
+            <span id="hora-atual"></span>
+        </p>
+    </footer>
+    <script>
+        function atualizarHora() {
+            const agora = new Date();
+            const horas = String(agora.getHours()).padStart(2, '0');
+            const minutos = String(agora.getMinutes()).padStart(2, '0');
+            const segundos = String(agora.getSeconds()).padStart(2, '0');
+
+            document.getElementById("hora-atual").textContent = `${horas}:${minutos}:${segundos}`;
+        }
+
+        atualizarHora();
+
+        setInterval(atualizarHora, 1000);
+    </script>
+</body>
+
+</html>

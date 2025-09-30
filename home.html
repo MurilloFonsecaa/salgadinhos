@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+<body>
+    <div class="cor-do-topo">
+        <img src="img/img/Salgados Logo.png" alt="Logo">
+        <div class="links-topo">
+            <a href="home.html" class="links-topo">Página inicial</a>
+            <a href="sobre.html" class="links-topo">Sobre</a>
+            <a href="serviços.html" class="links-topo">Serviços</a>
+            <a href="novidades.html" class="links-topo">Novidades</a>
+            <a href="contato.html" class="links-topo">Fale conosco</a>
+        </div>
+
+        <div class="campo-de-busca">
+            <input type="text" placeholder="Procure aqui">
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <div class="salgados-1">
+        <div>
+            <img src="img/salgadosssss/coxinha.jpg" alt="coxinha">
+            <p class="salgados-texto">Coxinha</p>
+        </div>
+
+        <div>
+            <img src="img/salgadosssss/kibe.jpeg" alt="kibe">
+            <p class="salgados-texto">Kibe</p>
+        </div>
+
+        <div>
+            <img src="img/salgadosssss/salsicha.jpeg" alt="enrolado de salsicha">
+            <p class="salgados-texto">Enrolado de salsicha</p>
+        </div>
+
+        <div>
+            <img src="img/salgadosssss/carne.jpeg" alt="croquete de carne">
+            <p class="salgados-texto">Croquete de carne</p>
+        </div>
+
+    </div>
+    <div class="salgados-2">
+        <div>
+            <img src="img/salgadosssss/linguiça.jpeg" alt="croquete de linguiça">
+            <p class="salgados-texto">Croquete de linguiça</p>
+        </div>
+
+        <div>
+            <img src="img/salgadosssss/azeitona.jpeg" alt="ricota de azeitona">
+            <p class="salgados-texto">Ricota de azeitona</p>
+        </div>
+
+        <div>
+            <img src="img/salgadosssss/presunto.jpeg" alt="queijo com presunto">
+            <p class="salgados-texto">Queijo com presunto</p>
+        </div>
+
+        <div>
+            <img src="img/salgadosssss/cebola.jpeg" alt="queijo com cebola">
+            <p class="salgados-texto">Queijo com cebola</p>
+        </div>
+
+    </div>
+    <div class="salgados-3">
+        <div>
+            <img src="img/salgadosssss/alho.jpeg" alt="queijo com alho">
+            <p class="salgados-texto">Queijo com alho</p>
+        </div>
+
+        <div>
+            <img src="img/salgadosssss/queijo.jpeg" alt="bolinha de queijo">
+            <p class="salgados-texto">Bolinha de queijo</p>
+        </div>
+
+        <div>
+            <img src="img/salgadosssss/cordona.jpeg" alt="ovo de cordona">
+            <p class="salgados-texto">Ovo de cordona</p>
+        </div>
+
+        <div>
+            <img src="img/salgadosssss/camarao.jpeg" alt="risole de camarão">
+            <p class="salgados-texto">Risole de camarão</p>
+        </div>
+    </div>
+    <div class="salgados-4">
+        <div>
+            <img src="img/salgadosssss/risole.jpeg" alt="risole de carne">
+            <p class="salgados-texto">Risole de carne</p>
+        </div>
+        <div>
+            <img src="img/salgadosssss/frango.jpeg" alt="risole de frango">
+            <p class="salgados-texto">Risole de frango</p>
+        </div>
+        <div>
+            <img src="img/salgadosssss/seca.jpeg" alt="risole de carne seca">
+            <p class="salgados-texto">Risole de carne seca</p>
+        </div>
+        <div>
+            <img src="img/salgadosssss/medalhao.jpeg" alt="medalhao">
+            <p class="salgados-texto">Medalhão de calabresa c/ queijo</p>
+        </div>
+
+    </div>
+    <footer>
+        <p class="social">
+            © 2025 - Quiosque Salgadinhos Deliciosos.
+            <span id="hora-atual"></span>
+        </p>
+    </footer>
+    <script>
+        function atualizarHora() {
+            const agora = new Date();
+            const horas = String(agora.getHours()).padStart(2, '0');
+            const minutos = String(agora.getMinutes()).padStart(2, '0');
+            const segundos = String(agora.getSeconds()).padStart(2, '0');
+
+            document.getElementById("hora-atual").textContent = `${horas}:${minutos}:${segundos}`;
+        }
+
+        atualizarHora();
+
+        setInterval(atualizarHora, 1000);
+    </script>
+
+</body>
+
+</html>

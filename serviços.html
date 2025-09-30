@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="serviços.css">
+</head>
+<body>
+    <div class="cor-do-topo">
+        <img src="img/img/Salgados Logo.png" alt="Logo">
+        <div class="links-topo">
+            <a href="home.html" class="links-topo">Página inicial</a>
+            <a href="sobre.html" class="links-topo">Sobre</a>
+            <a href="serviços.html" class="links-topo">Serviços</a>
+            <a href="novidades.html" class="links-topo">Novidades</a>
+            <a href="contato.html" class="links-topo">Fale conosco</a>
+        </div>
+        <div class="campo-de-busca">
+            <input type="text" placeholder="Procure aqui">
+        </div>
+    </div>
+    <div class="text-centro">
+        <h1>Transforme Sua Comemoração com Nossos Kits Festa</h1>
+    </div>
+    <div class="serviço">
+        <img src="img/salgadosssss/kit 1.avif">
+        <div class="texto">
+            <p>esta é nossa primeira opção de kit festa,de 1.000 salgadinhos</p>
+            <p>com um valor justo de apenas: R$600!!!</p>
+        </div>
+    </div>
+    </div>
+    <div class="serviço">
+        <img src="img/salgadosssss/kit 2.jpg">
+        <div class="texto">
+            <p>esta é nossa segunda opção de kit festa,de 2.000 salgadinhos</p>
+            <p>com um valor justo de apenas: R$1.100!!!</p>
+        </div>
+    </div>
+    </div>
+    <div class="serviço">
+        <img src="img/salgadosssss/kit 3.jpeg">
+        <div class="texto">
+            <p>esta é nossa terceira opção de kit festa,de 3.000 salgadinhos</p>
+            <p>com um valor justo de apenas: R$1.600!!!</p>
+        </div>
+    </div>
+    <div class="text-centro">
+        <h1>Links para Pedido</h1>
+    </div>
+        </div>
+    <section class="about__section">
+        <div class="about__section-container">
+            <div class="caixa">
+                <h3>Link Guadalupe</h3>  
+                <p><a href="https://instadelivery.com.br/salgadinhosdeliciosos">instadelivery-salgadinhosdeliciososguadalupe</a></p>   
+            </div>
+    <section class="about__section">
+        <div class="about__section-container">
+            <div class="caixa">
+                <h3>Link Granito</h3>  
+                <p><a href="https://instadelivery.com.br/salgadinhosdeliciososgranito">instadelivery-salgadinhosdeliciososgranito</a></p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p class="social">
+            © 2025 - Quiosque Salgadinhos Deliciosos.
+            <span id="hora-atual"></span>
+        </p>
+    </footer>
+    <script>
+        function atualizarHora() {
+            const agora = new Date();
+            const horas = String(agora.getHours()).padStart(2, '0');
+            const minutos = String(agora.getMinutes()).padStart(2, '0');
+            const segundos = String(agora.getSeconds()).padStart(2, '0');
+
+            document.getElementById("hora-atual").textContent = `${horas}:${minutos}:${segundos}`;
+        }
+
+        atualizarHora();
+
+        setInterval(atualizarHora, 1000);
+    </script>
+</body>
+
+</html>
