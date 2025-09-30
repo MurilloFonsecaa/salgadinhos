@@ -1,0 +1,1 @@
+Esse projeto é resultado de dois colegas para um trabalho acadêmico, e futuramente eu melhorarei esse site para usá-lo para a empresa de salgadinhos da minha mãe. O intuito é melhorá-lo para ser um site oficial. 
